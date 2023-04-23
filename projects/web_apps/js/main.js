@@ -14,6 +14,11 @@ $(function () {
 				console.log('success: ', response);
 				$("#pot").text(response.pot);
 				$("#temp").text(response.temp);
+				var c  = $(".circle");
+				c.removeClass('yellow');
+				if (response.switch == '1'){
+					c.addClass('yellow');
+				}
 			},
 			error: function (error) {
 				console.log('fail: ', error);
