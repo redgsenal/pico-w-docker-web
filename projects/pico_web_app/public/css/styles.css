@@ -1,0 +1,20 @@
+body {
+	background-color: lightblue;
+	padding: 10px;
+}
+
+.led_box {
+	padding: 20px 0;
+}
+
+.circle {
+	height: 25px;
+	width: 25px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.yellow {
+	background-color: yellow;
+}
