@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Respberry Pico W</title>
+        <link rel="stylesheet" href="./css/styles.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="led_box">
+            <button class = "redled" value="on" name="redled">Red ON</button>
+            <button class = "redled" value="off" name="redled">Red OFF</button>
+            <button class = "ledblink" value="blink" name="led">Green Blink</button>
+        </div>
+        <p>Temperature reading: <span id="temp"></span></p>
+        <p>Potentiometer reading: <span id="pot"></span></p>
+
+        <script src="./js/main.js"></script>        
+    </body>
+</html>

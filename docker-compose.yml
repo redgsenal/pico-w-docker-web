@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  #web
+  web:
+    build: .
+    restart: no
+    image: ubuntu:20.04
+    ports:
+      - "9001:80"
+    volumes:
+      - "./projects/:/home/projects"
+    networks:
+      - myubuntuos
+networks:
+  myubuntuos:
