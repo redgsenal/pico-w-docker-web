@@ -14,10 +14,15 @@ $(function () {
 				console.log('success: ', response);
 				$("#pot").text(response.pot);
 				$("#temp").text(response.temp);
-				var c  = $(".circle");
-				c.removeClass('yellow');
+				var sw  = $(".circle.switch");
+				var led  = $(".circle.led");
+				sw.removeClass('yellow');
+				led.removeClass('red');
 				if (response.switch == '1'){
-					c.addClass('yellow');
+					sw.addClass('yellow');
+				}
+				if (response.redled == '1'){
+					led.addClass('red');
 				}
 			},
 			error: function (error) {
