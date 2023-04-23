@@ -35,3 +35,11 @@ app.get('/', (req, res) => {
     dialog['message'] = "";
     res.render('home', { page: page, dialog: dialog });
 });
+
+app.get('/switch', (req, res) => {
+    console.log('switch here');
+    const message = {
+        switch: 1
+    };
+    return res.send(message);
+});
