@@ -33,10 +33,10 @@ $(function () {
 
 	$('.redled').click(function (evnt) {
 		evnt.preventDefault();
-		console.log('red on');
 		var btn = $(this);
 		var v = btn.val();
 		var p = { redled : v }
+		console.log('red: ', p);
 		console.log('p: ', p);
 		$(this).callpico(p);
 	});
